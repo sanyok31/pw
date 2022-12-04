@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "pw",
+    "description": "...",
+    "version": "0.0.1",
+    "author": "0",
+    "browser_action": {
+        "default_title": "для перевода подарков",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://pw.mail.ru/promo_items.php", "https://pw.mail.ru/usercp.php"
+            ],
+            "js": ["jquery.min.js", "pw.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
