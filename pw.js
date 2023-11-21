@@ -1,5 +1,5 @@
 try {
-   let codes = ["SCORPIONHB2022", ""]
+   let codes = ["VJ4FDI6GMB3N", "8E8QZPZLVRP5", ""]
    let codeIndex = 0;
 
    let pin = document.getElementById("pin");
@@ -48,7 +48,49 @@ for (let i = 0; i < divs.length; i++) {
    if (divs[i].textContent.includes("Небесная")) {
       divs[i].children[1].checked = true;
    }
+   if (divs[i].textContent.includes("Новогодний")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Купон")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Симфония")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Водный")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Набор рун")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Коробочка")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Серебряная")) {
+      divs[i].children[1].checked = true;
+   }
+   if (divs[i].textContent.includes("Колода")) {
+      divs[i].children[1].checked = true;
+   }	
 }
+
+var tagTR = document.getElementsByTagName("tr");
+
+for (let i = 2; i < tagTR.length; i++) {
+   if (tagTR[i].textContent.includes("ая отметка")) {
+      tagTR[i].remove();
+      i--;
+   }
+}
+
+/*
+for (let i = 2; i < tagTR.length; i++) {
+   if (tagTR[i].textContent.includes("Знак регистрации")) {
+      tagTR[i].remove();
+      i--;
+   }
+}
+*/
 
 let gift = document.getElementsByClassName("promo_container_content_body");
 let addButton = document.createElement("div");
