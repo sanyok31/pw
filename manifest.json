@@ -11,7 +11,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://pw.mail.ru/promo_items.php", "https://pw.mail.ru/usercp.php"
+                "https://pwonline.ru/promo_items.php", "https://pwonline.ru/usercp.php"
             ],
             "js": ["jquery.min.js", "pw.js"]
         }
